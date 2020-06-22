@@ -51,6 +51,8 @@ namespace AspnCore2Empty
                 app.UseExceptionHandler();
             }
 
+            app.UseStaticFiles();
+
             app.Run(async (context) =>
             {
                 //var mensagem = _config["Mensagem"];

@@ -7,7 +7,6 @@ C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\bin\Debug\netco
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.csprojAssemblyReference.cache
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.AssemblyInfoInputs.cache
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.AssemblyInfo.cs
-C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.csproj.CoreCompileInputs.cache
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.RazorAssemblyInfo.cache
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.RazorAssemblyInfo.cs
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.RazorTargetAssemblyInfo.cache
@@ -15,3 +14,4 @@ C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netco
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.pdb
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.genruntimeconfig.cache
 C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Source\MAC_ASPNET_CORE\MODULO01\AspnCore2Empty\AspnCore2Empty\obj\Debug\netcoreapp2.1\AspnCore2Empty.csproj.CoreCompileInputs.cache
