@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using AspnCore2Empty.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -33,10 +34,13 @@ namespace AspnCore2Empty
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddSingleton<IMensagemService, TextoMensagemService>();
+            services.AddSingleton(provider => _config);
+            services.AddSingleton<IMensagemService, ConfigurationMensagemService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IMensagemService msg)
         {
             if (env.IsDevelopment())
             {
@@ -49,10 +53,10 @@ namespace AspnCore2Empty
 
             app.Run(async (context) =>
             {
-                var mensagem = _config["Mensagem"];
-                var conexao = _config["ConnectionStrings:DefaultConnection"];
-                await context.Response.WriteAsync(mensagem);
-                await context.Response.WriteAsync(conexao);
+                //var mensagem = _config["Mensagem"];
+                //var conexao = _config["ConnectionStrings:DefaultConnection"];
+                //await context.Response.WriteAsync(mensagem);
+                await context.Response.WriteAsync(msg.GetMensagem());
             });
         }
     }
