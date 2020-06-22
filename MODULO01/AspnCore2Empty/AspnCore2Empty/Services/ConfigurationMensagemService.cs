@@ -16,6 +16,7 @@ namespace AspnCore2Empty.Services
         }
         public string GetMensagem()
         {
+            //throw new Exception("Forçando erro");
             return _config["Mensagem"];
         }
     }

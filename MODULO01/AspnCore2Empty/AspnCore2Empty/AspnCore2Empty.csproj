@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Arquivos\demo.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Arquivos\demo.html">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.1.1" />

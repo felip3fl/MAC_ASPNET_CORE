@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 
 namespace AspnCore2Empty
 {
@@ -51,7 +52,16 @@ namespace AspnCore2Empty
                 app.UseExceptionHandler();
             }
 
-            app.UseStaticFiles();
+
+
+            //app.UseStaticFiles();
+
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider
+                    (Path.Combine(Directory.GetCurrentDirectory(), @"Arquivos")),
+                    RequestPath = new PathString("/Arquivos")
+            });
 
             app.Run(async (context) =>
             {
