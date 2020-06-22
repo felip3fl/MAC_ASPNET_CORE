@@ -15,13 +15,18 @@ namespace AspnCore2Empty
     {
         public IConfiguration _config { get; set; }
 
-        public Startup()
+        public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
 
             _config = builder.Build();
+
+            if (env.IsDevelopment())
+            {
+                //builder.AddApplicationInsightsSettings(developerMode: true);
+            }
         }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -36,6 +41,10 @@ namespace AspnCore2Empty
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler();
             }
 
             app.Run(async (context) =>
