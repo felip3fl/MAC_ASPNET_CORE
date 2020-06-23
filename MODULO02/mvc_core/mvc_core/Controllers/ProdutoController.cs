@@ -6,7 +6,12 @@ namespace mvc_core.Controllers
     {
         public string Index()
         {
-            return "Este é o método Action do produto felipe";
+            var https = HttpContext.Request.IsHttps;
+            var caminho  = HttpContext.Request.Path;
+            var status  = HttpContext.Response.StatusCode;
+            var conexao  = HttpContext.Connection.ToString();
+
+            return https + "\r\n" + caminho + "\r\n" + status + "\r\n" + conexao;
         }
 
         public IActionResult Detalhe()
@@ -18,9 +23,10 @@ namespace mvc_core.Controllers
             //return Content("Uma string simples");
             //return Content("Arquivo PDF", "application/pdf");
             //return File("images/banner1.svg","image/svg+xml");
+            // var pessoa = new {Id = 1, Nome = "Felipe"};
+            // return new ObjectResult(pessoa);
             
-            var pessoa = new {Id = 1, Nome = "Felipe"};
-            return new ObjectResult(pessoa);
+            return View();
         }
     }
 }
