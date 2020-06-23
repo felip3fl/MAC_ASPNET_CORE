@@ -1,20 +1,47 @@
 ﻿
 <h1>Cadastro de Cliente</h1>
 <hr>
-<form action="/Cliente/Index" method="post">
-    Id:
-    <input type="text" name="Id" /><br />
 
-    Nome:
-    <input type="text" name="Nome" /><br />
-
-    Email:
-    <input type="text" name="Email" /><br />
-
-    <button type="submit">Salvar</button>
-</form>
-
-@if(ViewBag.Erro != null)
-{
-    <h2>@ViewBag.Erro</h2>
+@{
+    var listaPaises = new List<SelectListItem>()
+    {
+        new SelectListItem(){ Value="1", Text="Brazil"},
+        new SelectListItem(){ Value="2", Text="Portutal"},
+        new SelectListItem(){ Value="3", Text="Angola"}
+    };
 }
+
+    @using (Html.BeginForm("Index", "Cliente", FormMethod.Post))
+    {
+        @Html.Label("Id")
+        @Html.TextBox("Id")
+        <br />
+        @Html.Label("Nome")
+        @Html.TextBox("Nome")
+        <br />
+        @Html.Label("Email")
+        @Html.TextBox("Email")
+        <br />
+        @Html.Label("Senha")
+        @Html.Password("Senha")
+        <br />
+        @Html.Label("Masculino")
+        @Html.RadioButton("Sexo", "Masculino")
+        @Html.Label("Feminino")
+        @Html.RadioButton("Sexo", "Feminino")
+        <br />
+        @Html.Label("Lembrar")
+        @Html.CheckBox("Lembrar")
+        <br />
+        @Html.Label("Pais")
+        @Html.DropDownList("Pais", listaPaises)
+        <br />
+
+        <button type = "submit"> Salvar </button>
+    }
+
+
+    @if (ViewBag.Erro != null)
+    {
+        <h2>@ViewBag.Erro</h2>
+    }

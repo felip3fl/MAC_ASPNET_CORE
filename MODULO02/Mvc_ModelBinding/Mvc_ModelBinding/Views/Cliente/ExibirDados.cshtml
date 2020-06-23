@@ -4,15 +4,17 @@
 
 <hr />
 
-Id:
-<label for="Id">@Model.Id</label> <br />
-
-Nome:
-<label for="Id">@Model.Nome</label> <br />
-
-Email:
-<label for="Id">@Model.Email</label> <br />
-
+@Html.LabelFor(model => model.Id)
+@Html.DisplayFor(model => model.Id)
+<br />
+@Html.LabelFor(model => model.Nome)
+@Html.DisplayFor(model => model.Nome)
+<br />
+@Html.LabelFor(model => model.Email)
+@Html.DisplayFor(model => model.Email)
+<br />
 <hr />
+
+@Html.ActionLink("Retornar","Index","Cliente")
 
 <a href="/Cliente/Index">Retornar</a>
