@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using mvc_core.Models;
+using mvc_core.ViewModels;
 
 namespace mvc_core.Controllers
 {
@@ -15,7 +17,19 @@ namespace mvc_core.Controllers
                 Email = "felipe@gmail.com"
             };
 
-            return View(cliente);
+            var pedidos = new List<Pedido>
+            {
+                new Pedido{Nome = "Pedido 1"},
+                new Pedido{Nome = "Pedido 2"}
+            };
+
+            var viewModel = new ClientePedidoViewModel
+            {
+                Cliente = cliente,
+                Pedidos = pedidos
+            };
+
+            return View(viewModel);
         }
     }
 }

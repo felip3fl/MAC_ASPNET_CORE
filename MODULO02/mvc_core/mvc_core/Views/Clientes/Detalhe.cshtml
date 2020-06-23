@@ -1,9 +1,25 @@
-@model mvc_core.Models.Cliente
+@model mvc_core.ViewModels.ClientePedidoViewModel
 
 <h1>Cliente</h1>
-
 <hr/>
 
-@Model.ClienteId <br/>
-@Model.Nome <br/>
-@Model.Email <br/>
+@Model.Cliente.ClienteId <br/>
+@Model.Cliente.Nome <br/>
+@Model.Cliente.Email <br/>
+
+<h1>Pedido</h1>
+<hr/>
+
+@if(Model.Pedidos.Count ==0)
+{
+    <p>Nenhum pedido para o cliente</p>
+}
+else
+{
+    <ul>
+    @foreach(var pedido in Model.Pedidos)
+    {
+        <li>@pedido.Nome</li>
+    }
+    </ul>
+}
