@@ -40,5 +40,10 @@ namespace mvc_core.Controllers
         {
             return Content("Valor do Id = " + codigo);
         }
+
+        public IActionResult DataLancamento(int ano, int mes)
+        {
+            return Content(ano + "/" + mes);
+        }
     }
 }
