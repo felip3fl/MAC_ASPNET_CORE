@@ -2887,6 +2887,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\mvc_core\\mvc_core\\Views\\Teste\\IndexViewBag.cshtml",
+      "TargetPath": "Views\\Teste\\IndexViewBag.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\mvc_core\\mvc_core\\Views\\Teste\\Index.cshtml",
+      "TargetPath": "Views\\Teste\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\mvc_core\\mvc_core\\Views\\Produto\\Detalhe.cshtml",
       "TargetPath": "Views\\Produto\\Detalhe.cshtml",
       "FileKind": "mvc"

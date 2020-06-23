@@ -35,3 +35,5 @@ C:\Source\MAC_ASPNET_CORE\MODULO02\mvc_core\mvc_core\obj\Debug\netcoreapp2.1\mvc
 C:\Source\MAC_ASPNET_CORE\MODULO02\mvc_core\mvc_core\obj\Debug\netcoreapp2.1\mvc_core.genruntimeconfig.cache
 C:\Source\MAC_ASPNET_CORE\MODULO02\mvc_core\mvc_core\obj\Debug\netcoreapp2.1\mvc_core.csproj.CopyComplete
 C:\Source\MAC_ASPNET_CORE\MODULO02\mvc_core\mvc_core\obj\Debug\netcoreapp2.1\Razor\Views\Produto\Detalhe.cshtml.g.cs
+C:\Source\MAC_ASPNET_CORE\MODULO02\mvc_core\mvc_core\obj\Debug\netcoreapp2.1\Razor\Views\Teste\Index.cshtml.g.cs
+C:\Source\MAC_ASPNET_CORE\MODULO02\mvc_core\mvc_core\obj\Debug\netcoreapp2.1\Razor\Views\Teste\IndexViewBag.cshtml.g.cs
