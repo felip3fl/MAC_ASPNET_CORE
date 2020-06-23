@@ -56,16 +56,16 @@ namespace mvc_core
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute(
-                    "PorDataLancamento",
-                    "produto/lancamentos/{ano}/{mes}",
-                    new {Controller = "Produto", Action="DataLancamento"},
-                    new {ano = @"2013|2017", mes =@"\d{2}"}
-                );
+                // routes.MapRoute(
+                //     "PorDataLancamento",
+                //     "produto/lancamentos/{ano}/{mes}",
+                //     new {Controller = "Produto", Action="DataLancamento"},
+                //     new {ano = @"2013|2017", mes =@"\d{2}"}
+                // );
 
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                // routes.MapRoute(
+                //     name: "default",
+                //     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

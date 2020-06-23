@@ -8,13 +8,24 @@ using mvc_core.Models;
 
 namespace mvc_core.Controllers
 {
+    [Route("[controller]/[action]")]
     public class HomeController : Controller
     {
+        // [Route("lista")]
+        public string Lista()
+        {
+            return "Action Lista ******";
+        }
+
+        // [Route("")]
+        // [Route("home")]
+        // [Route("home/index")]
         public IActionResult Index()
         {
             return View();
         }
 
+        // [Route("home/about")]
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -22,6 +33,7 @@ namespace mvc_core.Controllers
             return View();
         }
 
+        // [HttpGet("home/contact")]
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";

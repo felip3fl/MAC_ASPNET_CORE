@@ -41,6 +41,7 @@ namespace mvc_core.Controllers
             return Content("Valor do Id = " + codigo);
         }
 
+        [Route("produto/lancamentos/{ano:int}/{mes:range(1,12)}")]
         public IActionResult DataLancamento(int ano, int mes)
         {
             return Content(ano + "/" + mes);
