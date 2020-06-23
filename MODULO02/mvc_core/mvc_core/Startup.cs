@@ -56,7 +56,7 @@ namespace mvc_core
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Produto}/{action=Detalhe}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
