@@ -2932,6 +2932,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\mvc_core\\mvc_core\\Views\\Clientes\\Detalhe.cshtml",
+      "TargetPath": "Views\\Clientes\\Detalhe.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\mvc_core\\mvc_core\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
