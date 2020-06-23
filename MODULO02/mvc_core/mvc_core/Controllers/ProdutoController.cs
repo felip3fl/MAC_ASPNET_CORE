@@ -6,7 +6,7 @@ namespace mvc_core.Controllers
     {
         public string Index()
         {
-            return "Este é o método Action do produto";
+            return "Este é o método Action do produto felipe";
         }
 
         public IActionResult Detalhe()
