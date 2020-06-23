@@ -1,0 +1,20 @@
+﻿
+<h1>Cadastro de Cliente</h1>
+<hr>
+<form action="/Cliente/Index" method="post">
+    Id:
+    <input type="text" name="Id" /><br />
+
+    Nome:
+    <input type="text" name="Nome" /><br />
+
+    Email:
+    <input type="text" name="Email" /><br />
+
+    <button type="submit">Salvar</button>
+</form>
+
+@if(ViewBag.Erro != null)
+{
+    <h2>@ViewBag.Erro</h2>
+}
