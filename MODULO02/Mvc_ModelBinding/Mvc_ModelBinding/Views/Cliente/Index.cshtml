@@ -11,8 +11,8 @@
     };
 }
 
-    @using (Html.BeginForm("Index", "Cliente", FormMethod.Post))
-    {
+    <form asp-asp-controller="Cliente" asp-action="Index" method="POST">
+
         @Html.Label("Id")
         @Html.TextBox("Id")
         <br />
@@ -38,8 +38,8 @@
         <br />
 
         <button type = "submit"> Salvar </button>
-    }
-
+    
+    </form>
 
     @if (ViewBag.Erro != null)
     {

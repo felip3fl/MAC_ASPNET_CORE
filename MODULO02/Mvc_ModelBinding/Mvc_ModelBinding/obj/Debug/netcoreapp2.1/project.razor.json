@@ -2877,6 +2877,11 @@
   "RootNamespace": "Mvc_ModelBinding",
   "Documents": [
     {
+      "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\Cliente\\Index.cshtml",
+      "TargetPath": "Views\\Cliente\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\Home\\Contact.cshtml",
       "TargetPath": "Views\\Home\\Contact.cshtml",
       "FileKind": "mvc"
@@ -2884,6 +2889,11 @@
     {
       "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\Home\\About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\Cliente\\ExibirDados.cshtml",
+      "TargetPath": "Views\\Cliente\\ExibirDados.cshtml",
       "FileKind": "mvc"
     },
     {
