@@ -2907,6 +2907,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\Cliente\\_AlertaView.cshtml",
+      "TargetPath": "Views\\Cliente\\_AlertaView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\Shared\\_MenuView.cshtml",
+      "TargetPath": "Views\\Shared\\_MenuView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -2919,6 +2929,11 @@
     {
       "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Source\\MAC_ASPNET_CORE\\MODULO02\\Mvc_ModelBinding\\Mvc_ModelBinding\\Views\\Shared\\_RodapeView.cshtml",
+      "TargetPath": "Views\\Shared\\_RodapeView.cshtml",
       "FileKind": "mvc"
     },
     {

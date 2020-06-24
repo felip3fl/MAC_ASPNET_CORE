@@ -36,3 +36,4 @@ C:\Source\MAC_ASPNET_CORE\MODULO02\Mvc_ModelBinding\Mvc_ModelBinding\obj\Debug\n
 C:\Source\MAC_ASPNET_CORE\MODULO02\Mvc_ModelBinding\Mvc_ModelBinding\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Index.cshtml.g.cs
 C:\Source\MAC_ASPNET_CORE\MODULO02\Mvc_ModelBinding\Mvc_ModelBinding\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\ExibirDados.cshtml.g.cs
 C:\Source\MAC_ASPNET_CORE\MODULO02\Mvc_ModelBinding\Mvc_ModelBinding\obj\Debug\netcoreapp2.1\Mvc_ModelBinding.csproj.CoreCompileInputs.cache
+C:\Source\MAC_ASPNET_CORE\MODULO02\Mvc_ModelBinding\Mvc_ModelBinding\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_MenuView.cshtml.g.cs
