@@ -1,0 +1,11 @@
+@inject vscode_vinject.Services.EstadosService estados
+
+<h1>ASP .NET Core - View Injection</h1>
+<hr/>
+
+<br />
+Estado : @Html.DropDownList("Estado", 
+        estados.GetEstados().Select(e=>new SelectListItem() {Text=e.Nome, Value=e.Sigla}) )
+<br />
+<hr />
+
