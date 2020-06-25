@@ -10,7 +10,6 @@ C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\bin\Debug\netcoreap
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\bin\Debug\netcoreapp2.1\QuadroAvisos.Views.pdb
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.AssemblyInfoInputs.cache
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.AssemblyInfo.cs
-C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.csproj.CoreCompileInputs.cache
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.RazorAssemblyInfo.cache
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.RazorAssemblyInfo.cs
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.TagHelpers.input.cache
@@ -33,3 +32,5 @@ C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreap
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.pdb
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.genruntimeconfig.cache
 C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.csproj.CopyComplete
+C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.csprojAssemblyReference.cache
+C:\Source\MAC_ASPNET_CORE\MODULO02\QuadroAvisos\QuadroAvisos\obj\Debug\netcoreapp2.1\QuadroAvisos.csproj.CoreCompileInputs.cache
