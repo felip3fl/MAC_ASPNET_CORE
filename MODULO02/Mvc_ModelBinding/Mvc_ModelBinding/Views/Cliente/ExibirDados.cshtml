@@ -1,0 +1,24 @@
+﻿@* @model Mvc_ModelBinding.Models.Cliente *@
+@model Cliente
+
+<h1>ExibirDados</h1>
+
+<hr />
+
+@Html.LabelFor(model => model.Id)
+<input asp-for="Id"/>
+@* @Html.DisplayFor(model => model.Id) *@
+<br />
+@Html.LabelFor(model => model.Nome)
+<input asp-for="Nome"/>
+@* @Html.DisplayFor(model => model.Nome) *@
+<br />
+@Html.LabelFor(model => model.Email)
+<input asp-for="Email"/>
+@* @Html.DisplayFor(model => model.Email) *@
+<br />
+<hr />
+
+@Html.ActionLink("Retornar","Index","Cliente")
+
+<a href="/Cliente/Index">Retornar</a>

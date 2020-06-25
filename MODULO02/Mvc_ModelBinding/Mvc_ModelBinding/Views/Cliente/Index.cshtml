@@ -1,0 +1,54 @@
+﻿@Html.Partial("_MenuView")
+@Html.Partial("_AlertaView")
+
+<h1>Cadastro de Cliente</h1>
+<hr>
+
+@{
+    var listaPaises = new List<SelectListItem>()
+    {
+        new SelectListItem(){ Value="1", Text="Brazil"},
+        new SelectListItem(){ Value="2", Text="Portutal"},
+        new SelectListItem(){ Value="3", Text="Angola"}
+    };
+}
+
+    <form asp-asp-controller="Cliente" asp-action="Index" method="POST">
+
+        @Html.Label("Id")
+        @Html.TextBox("Id")
+        <br />
+        @Html.Label("Nome")
+        @Html.TextBox("Nome")
+        <br />
+        @Html.Label("Email")
+        @Html.TextBox("Email")
+        <br />
+        @Html.Label("Senha")
+        @Html.Password("Senha")
+        <br />
+        @Html.Label("Masculino")
+        @Html.RadioButton("Sexo", "Masculino")
+        @Html.Label("Feminino")
+        @Html.RadioButton("Sexo", "Feminino")
+        <br />
+        @Html.Label("Lembrar")
+        @Html.CheckBox("Lembrar")
+        <br />
+        @Html.Label("Pais")
+        @Html.DropDownList("Pais", listaPaises)
+        <br />
+
+        <button type = "submit"> Salvar </button>
+    
+    </form>
+
+@{
+    Html.RenderPartial("_RodapeView");
+}
+
+
+    @if (ViewBag.Erro != null)
+    {
+        <h2>@ViewBag.Erro</h2>
+    }
