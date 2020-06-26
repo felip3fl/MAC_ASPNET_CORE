@@ -137,5 +137,20 @@ namespace Mvc_BO.Controllers
             Aluno aluno = alunoBll.GetAlunos().Single(a => a.Id == id);
             return View(aluno);
         }
+
+        [HttpGet]
+        public IActionResult Procurar(string procurarPor, string criterio)
+        {
+            if (procurarPor == "Email")
+            {
+                Aluno aluno = alunoBll.GetAlunos().SingleOrDefault(a=>a.Email == criterio);
+                return View(aluno);
+            }
+            else
+            {
+                Aluno aluno = alunoBll.GetAlunos().SingleOrDefault(a => a.Nome == criterio);
+                return View(aluno);
+            }
+        }
     }
 }

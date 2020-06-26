@@ -17,6 +17,17 @@
     <p>
         <a asp-action="Create">Criar novo aluno</a>
     </p>
+
+    <p>
+        @using(Html.BeginForm("Procurar","Home", FormMethod.Get))
+        {
+            <b>Produrar por: </b>
+            @Html.RadioButton("procurarpor","Nome", true)<text>Nome</text>
+            @Html.RadioButton("procurarpor", "Email", true)<text>Email</text><br />
+            @Html.TextBox("criterio")<input type="submit" value="Procurar"/>
+        }
+    </p>
+
     <table class="table">
         <thead>
             <tr>
