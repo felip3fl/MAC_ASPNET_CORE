@@ -130,5 +130,12 @@ namespace Mvc_BO.Controllers
             alunoBll.DeletarAluno(id);
             return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public IActionResult Details(int id)
+        {
+            Aluno aluno = alunoBll.GetAlunos().Single(a => a.Id == id);
+            return View(aluno);
+        }
     }
 }

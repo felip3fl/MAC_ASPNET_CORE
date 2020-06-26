@@ -14,11 +14,11 @@ namespace Mvc_BO.Models
 
         [Required(ErrorMessage = "O nome deve ser informado")]
         [StringLength(50,MinimumLength =3, ErrorMessage ="O nome deve ter no minuto 5 caracteres")]
-        [Display(Name ="Informe o nome do cliente")]
+        [Display(Name ="Nome:")]
         public string Nome { get; set; }
 
-        [Display(Name = "Informe o sexo do cliente")]
-        [Required(ErrorMessage = "O sexo deve ser informado")]
+        [Required(ErrorMessage = "Sexo deve ser informado")]
+        [Display(Name = "Sexo:")]
         public string Sexo { get; set; }
 
         [Required(ErrorMessage = "O email deve ser informado")]
