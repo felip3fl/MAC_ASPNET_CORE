@@ -12,6 +12,6 @@ namespace Mvc_EFCore2.Models
         {
         }
 
-        public DbSet<Aluno> Alunos {get;set}
+        public DbSet<Aluno> Alunos { get; set; }
     }
 }
