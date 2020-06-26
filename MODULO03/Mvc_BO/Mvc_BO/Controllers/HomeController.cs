@@ -11,6 +11,12 @@ namespace Mvc_BO.Controllers
 {
     public class HomeController : Controller
     {
+        private IAlunoBLL alunoBll;
+        public HomeController(IAlunoBLL _alunoBLL)
+        {
+            alunoBll = _alunoBLL;
+        }
+
         public IActionResult Index()
         {
             AlunoBLL _aluno = new AlunoBLL();
@@ -24,6 +30,27 @@ namespace Mvc_BO.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+
+        public IActionResult Edit(int id)
+        {
+            //AlunoBLL alunoBll = new AlunoBLL();
+            Aluno aluno = alunoBll.GetAlunos().Single(x => x.Id == id);
+            return View(aluno);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Aluno aluno)
+        {
+            if (ModelState.IsValid)
+            {
+                //AlunoBLL alunoBll = new AlunoBLL();
+                alunoBll.AtualizarAluno(aluno);
+                return RedirectToAction("Index");
+            }
+            {
+                return View(aluno);
+            }
         }
 
         [HttpPost]
@@ -55,8 +82,8 @@ namespace Mvc_BO.Controllers
             }
             else
             {
-                AlunoBLL _aluno = new AlunoBLL();
-                _aluno.IncluirAluno(aluno);
+                //AlunoBLL _aluno = new AlunoBLL();
+                alunoBll.IncluirAluno(aluno);
                 return RedirectToAction("Index");
             }
         }

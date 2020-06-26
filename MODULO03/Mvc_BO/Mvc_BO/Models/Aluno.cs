@@ -19,14 +19,13 @@ namespace Mvc_BO.Models
         [Required(ErrorMessage = "O sexo deve ser informado")]
         public string Sexo { get; set; }
 
-
         [Required(ErrorMessage = "O email deve ser informado")]
         [EmailAddress(ErrorMessage = "Email inválido")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "O data de nascimento deve ser informado")]
         [DataType(DataType.DateTime)]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode =true)]
         public DateTime Nascimento { get; set; }
 
     }
