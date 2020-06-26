@@ -40,8 +40,12 @@ namespace Mvc_BO.Controllers
         }
 
         [HttpPost]
-        public IActionResult Edit(Aluno aluno)
+        public IActionResult Edit(
+            [Bind(nameof(Aluno.Id), nameof(Aluno.Sexo), nameof(Aluno.Email), nameof(Aluno.Nascimento))] 
+        Aluno aluno)
         {
+            aluno.Nome = alunoBll.GetAlunos().Single(a => a.Id == aluno.Id).Nome;
+
             if (ModelState.IsValid)
             {
                 //AlunoBLL alunoBll = new AlunoBLL();

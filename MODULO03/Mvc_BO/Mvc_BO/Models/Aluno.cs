@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,6 +9,7 @@ namespace Mvc_BO.Models
 {
     public class Aluno
     {
+        [BindNever]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "O nome deve ser informado")]
