@@ -120,7 +120,14 @@ namespace Mvc_BO.Controllers
         [HttpGet]
         public IActionResult Delete(int id)
         {
-            alunoBll.DeletarAluno(id);
+            Aluno aluno = alunoBll.GetAlunos().Single(a => a.Id == id);
+            return View(aluno);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Aluno aluno)
+        {
+            alunoBll.DeletarAluno(aluno.Id);
             return RedirectToAction("Index");
         }
     }

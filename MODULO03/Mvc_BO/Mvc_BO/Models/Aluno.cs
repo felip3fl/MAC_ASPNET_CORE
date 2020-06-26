@@ -9,7 +9,7 @@ namespace Mvc_BO.Models
 {
     public class Aluno
     {
-        [BindNever]
+        //[BindNever]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "O nome deve ser informado")]
