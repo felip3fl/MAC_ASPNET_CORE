@@ -19,6 +19,29 @@ namespace Mvc_BO.Controllers
             return View("Lista",alunos);
         }
 
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Aluno aluno)
+        {
+            if (aluno?.Nome == null || aluno?.Email == null || aluno.Sexo == null)
+            {
+                ViewBag.Erro = "Dados inválidos!";
+                return View();
+            }
+            else
+            {
+                AlunoBLL _aluno = new AlunoBLL();
+                _aluno.IncluirAluno(aluno);
+                return RedirectToAction("Index");
+            }
+        }
+
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
