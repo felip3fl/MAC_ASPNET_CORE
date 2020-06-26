@@ -92,7 +92,6 @@ namespace Mvc_BO.Controllers
             }
         }
 
-
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
@@ -116,6 +115,13 @@ namespace Mvc_BO.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            alunoBll.DeletarAluno(id);
+            return RedirectToAction("Index");
         }
     }
 }
