@@ -117,17 +117,17 @@ namespace Mvc_BO.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        [HttpGet]
-        public IActionResult Delete(int id)
-        {
-            Aluno aluno = alunoBll.GetAlunos().Single(a => a.Id == id);
-            return View(aluno);
-        }
+        //[HttpGet]
+        //public IActionResult Delete(int id)
+        //{
+        //    Aluno aluno = alunoBll.GetAlunos().Single(a => a.Id == id);
+        //    return View(aluno);
+        //}
 
         [HttpPost]
-        public IActionResult Delete(Aluno aluno)
+        public IActionResult Delete(int id)
         {
-            alunoBll.DeletarAluno(aluno.Id);
+            alunoBll.DeletarAluno(id);
             return RedirectToAction("Index");
         }
     }
