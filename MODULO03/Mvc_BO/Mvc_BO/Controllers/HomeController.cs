@@ -40,6 +40,7 @@ namespace Mvc_BO.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Edit(
             [Bind(nameof(Aluno.Id), nameof(Aluno.Sexo), nameof(Aluno.Email), nameof(Aluno.Nascimento))] 
         Aluno aluno)
