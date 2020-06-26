@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Mvc_BO.Models;
 
 namespace Mvc_BO.Controllers
@@ -28,9 +29,28 @@ namespace Mvc_BO.Controllers
         [HttpPost]
         public IActionResult Create(Aluno aluno)
         {
-            if (aluno?.Nome == null || aluno?.Email == null || aluno.Sexo == null)
+            //if (aluno?.Nome == null || aluno?.Email == null || aluno.Sexo == null)
+            //{
+            //    ViewBag.Erro = "Dados inválidos!";
+            //    return View();
+            //}
+            //else
+            //{
+
+            if (string.IsNullOrEmpty(aluno.Nome))
+                ModelState.AddModelError("Nome","O nome é obrigatório");
+
+            if (string.IsNullOrEmpty(aluno.Sexo))
+                ModelState.AddModelError("Sexo", "O Sexo é obrigatório");
+
+            if (string.IsNullOrEmpty(aluno.Email))
+                ModelState.AddModelError("Email", "O Email é obrigatório");
+
+            if (aluno.Nascimento <= DateTime.Now.AddYears(-18))
+                ModelState.AddModelError("Nascimento", "Data de nascimento inválida");
+
+            if (!ModelState.IsValid)
             {
-                ViewBag.Erro = "Dados inválidos!";
                 return View();
             }
             else
