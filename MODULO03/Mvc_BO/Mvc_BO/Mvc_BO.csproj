@@ -5,6 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\Fotos\1.jpg" />
+    <None Include="wwwroot\Fotos\2.jpg" />
+    <None Include="wwwroot\Fotos\3.jpg" />
+    <None Include="wwwroot\Fotos\4.png" />
+    <None Include="wwwroot\Fotos\5.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />

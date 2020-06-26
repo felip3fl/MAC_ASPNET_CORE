@@ -4,7 +4,7 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Detalhes do Aluno</h2>
+    <h2>Detalhes do Aluno</h2>
 
 <div>
     <h4>Aluno</h4>
@@ -39,6 +39,19 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Nascimento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Foto)
+        </dt>
+        <dd>
+            @*@Html.DisplayFor(model => model.Foto)*@
+            <img src="@Url.Content(@Model.Foto)" alt="@Model.Texto" />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Texto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Texto)
         </dd>
     </dl>
 </div>
