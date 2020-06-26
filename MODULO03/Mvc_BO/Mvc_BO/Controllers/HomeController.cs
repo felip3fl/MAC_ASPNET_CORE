@@ -12,7 +12,11 @@ namespace Mvc_BO.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            AlunoBLL _aluno = new AlunoBLL();
+
+            List<Aluno> alunos = _aluno.GetAlunos().ToList();
+
+            return View("Lista",alunos);
         }
 
         public IActionResult About()
