@@ -37,17 +37,17 @@ namespace Mvc_BO.Controllers
             //else
             //{
 
-            if (string.IsNullOrEmpty(aluno.Nome))
-                ModelState.AddModelError("Nome","O nome é obrigatório");
+            //if (string.IsNullOrEmpty(aluno.Nome))
+            //    ModelState.AddModelError("Nome","O nome é obrigatório");
 
-            if (string.IsNullOrEmpty(aluno.Sexo))
-                ModelState.AddModelError("Sexo", "O Sexo é obrigatório");
+            //if (string.IsNullOrEmpty(aluno.Sexo))
+            //    ModelState.AddModelError("Sexo", "O Sexo é obrigatório");
 
-            if (string.IsNullOrEmpty(aluno.Email))
-                ModelState.AddModelError("Email", "O Email é obrigatório");
+            //if (string.IsNullOrEmpty(aluno.Email))
+            //    ModelState.AddModelError("Email", "O Email é obrigatório");
 
-            if (aluno.Nascimento <= DateTime.Now.AddYears(-18))
-                ModelState.AddModelError("Nascimento", "Data de nascimento inválida");
+            //if (aluno.Nascimento <= DateTime.Now.AddYears(-18))
+            //    ModelState.AddModelError("Nascimento", "Data de nascimento inválida");
 
             if (!ModelState.IsValid)
             {
