@@ -10,9 +10,17 @@ namespace EFCore_DbFirst.Controllers
 {
     public class HomeController : Controller
     {
+        private TesteContext _context;
+
+        public HomeController(TesteContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var students = _context.Student.ToList();
+            return View(students);
         }
 
         public IActionResult About()
