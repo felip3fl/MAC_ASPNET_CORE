@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsandoFluentAPI", "UsandoFluentAPI\UsandoFluentAPI.csproj", "{718E6AB7-1757-4024-8E72-E6A7F458986F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{718E6AB7-1757-4024-8E72-E6A7F458986F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{718E6AB7-1757-4024-8E72-E6A7F458986F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{718E6AB7-1757-4024-8E72-E6A7F458986F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{718E6AB7-1757-4024-8E72-E6A7F458986F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63FBA7EE-E171-410A-9329-706708113457}
+	EndGlobalSection
+EndGlobal
