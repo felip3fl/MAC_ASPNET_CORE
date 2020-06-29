@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Mvc_EFCore2.Models;
 
 namespace Mvc_EFCore2.Migrations
 {
     [DbContext(typeof(AlunoContext))]
-    partial class AlunoContextModelSnapshot : ModelSnapshot
+    [Migration("20200629144915_IncluirFoto_Texto")]
+    partial class IncluirFoto_Texto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,35 +49,9 @@ namespace Mvc_EFCore2.Migrations
                         .IsRequired()
                         .HasMaxLength(150);
 
-                    b.Property<int?>("TipoSocioId");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("TipoSocioId");
 
                     b.ToTable("Alunos");
-                });
-
-            modelBuilder.Entity("Mvc_EFCore2.Models.TipoSocio", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("DuracaoEmMeses");
-
-                    b.Property<int>("TaxaDesconto");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TipoSocios");
-                });
-
-            modelBuilder.Entity("Mvc_EFCore2.Models.Aluno", b =>
-                {
-                    b.HasOne("Mvc_EFCore2.Models.TipoSocio", "TipoSocio")
-                        .WithMany()
-                        .HasForeignKey("TipoSocioId");
                 });
 #pragma warning restore 612, 618
         }

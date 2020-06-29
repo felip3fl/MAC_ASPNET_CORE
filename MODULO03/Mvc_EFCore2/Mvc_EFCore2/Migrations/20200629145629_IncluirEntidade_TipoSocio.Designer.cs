@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Mvc_EFCore2.Models;
 
 namespace Mvc_EFCore2.Migrations
 {
     [DbContext(typeof(AlunoContext))]
-    partial class AlunoContextModelSnapshot : ModelSnapshot
+    [Migration("20200629145629_IncluirEntidade_TipoSocio")]
+    partial class IncluirEntidade_TipoSocio
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

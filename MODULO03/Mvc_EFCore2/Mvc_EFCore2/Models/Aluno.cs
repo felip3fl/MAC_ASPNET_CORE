@@ -25,6 +25,17 @@ namespace Mvc_EFCore2.Models
         [StringLength(150)]
         public string Email { get; set; }
         public DateTime Nascimento { get; set; }
-        
+
+        [Required]
+        [StringLength(150)]
+        public string Foto { get; set; }
+
+        [Required]
+        [StringLength(150)]
+        public string Texto { get; set; }
+
+        public TipoSocio TipoSocio { get; set; }
+
+
     }
 }
