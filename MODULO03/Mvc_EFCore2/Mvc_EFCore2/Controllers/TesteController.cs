@@ -128,5 +128,18 @@ namespace Mvc_EFCore2.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Details(int? id)
+        {
+            if (id == null)
+                return NotFound();
+
+            var aluno = _context.Alunos.SingleOrDefault(a => a.Id == id);
+
+            if (aluno == null)
+                return NotFound();
+
+            return View(aluno);
+        }
     }
 }
