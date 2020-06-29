@@ -101,6 +101,32 @@ namespace Mvc_EFCore2.Controllers
             return _context.Alunos.Any(e => e.Id == id);
         }
 
+        [HttpGet]
+        public IActionResult Delete(int? id)
+        {
+            if (id == null)
+                return NotFound();
 
+            var aluno = _context.Alunos.SingleOrDefault(a => a.Id == id);
+
+            if(aluno == null)
+            {
+                return NotFound();
+            }
+
+            return View(aluno);
+        }
+
+        [HttpPost,ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirma(int? id)
+        {
+            var aluno = _context.Alunos.SingleOrDefault(a => a.Id == id);
+
+            _context.Alunos.Remove(aluno);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
