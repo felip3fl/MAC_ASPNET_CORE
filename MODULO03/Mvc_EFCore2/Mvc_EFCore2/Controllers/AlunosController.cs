@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.JsonPatch.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Mvc_EFCore2.Models;
+using ReflectionIT.Mvc.Paging;
 
 namespace Mvc_EFCore2.Controllers
 {
@@ -19,9 +21,11 @@ namespace Mvc_EFCore2.Controllers
         }
 
         // GET: Alunos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page=1)
         {
-            return View(await _context.Alunos.ToListAsync());
+            var alunos = _context.Alunos.OrderBy(a=> a.Id);
+            var model = await PagingList.CreateAsync(alunos, 4, page);
+            return View(model);
         }
 
         // GET: Alunos/Details/5

@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Mvc_EFCore2.Models;
+using ReflectionIT.Mvc.Paging;
 
 namespace Mvc_EFCore2
 {
@@ -34,6 +35,8 @@ namespace Mvc_EFCore2
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddDbContext<AlunoContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("conexaoSQLServer")));
+
+            services.AddPaging();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +58,7 @@ namespace Mvc_EFCore2
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Teste}/{action=Index}/{id?}");
+                    template: "{controller=Alunos}/{action=Index}/{id?}");
             });
         }
     }

@@ -1,4 +1,5 @@
-﻿@model IEnumerable<Mvc_EFCore2.Models.Aluno>
+﻿@*@model IEnumerable<Mvc_EFCore2.Models.Aluno>*@
+@model ReflectionIT.Mvc.Paging.PagingList<Aluno>
 
 @{
     ViewData["Title"] = "Index";
@@ -51,3 +52,7 @@
 }
     </tbody>
 </table>
+
+<nav aria-label="Navegacao">
+    <vc:pager paging-list="@Model"/>
+</nav>
