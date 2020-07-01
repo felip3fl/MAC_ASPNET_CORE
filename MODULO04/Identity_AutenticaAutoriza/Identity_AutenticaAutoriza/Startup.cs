@@ -41,6 +41,8 @@ namespace Identity_AutenticaAutoriza
                 facebookOptions.AppSecret = Configuration["Facebook:AppSecret"];
             });
 
+            var _testeSecreto = this.Configuration["MeuSegredo"];
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
