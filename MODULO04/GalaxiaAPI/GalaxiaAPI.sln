@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxiaAPI", "GalaxiaAPI\GalaxiaAPI.csproj", "{C24205B7-928E-49DB-848A-E437799E54AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C24205B7-928E-49DB-848A-E437799E54AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24205B7-928E-49DB-848A-E437799E54AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24205B7-928E-49DB-848A-E437799E54AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24205B7-928E-49DB-848A-E437799E54AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57551523-11EB-4562-A9FE-A88E007F713D}
+	EndGlobalSection
+EndGlobal
