@@ -12,7 +12,8 @@ namespace GalaxiaAPI.Model
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-
         }
+
+
     }
 }
