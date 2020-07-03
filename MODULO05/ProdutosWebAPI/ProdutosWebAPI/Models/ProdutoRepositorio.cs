@@ -12,11 +12,11 @@ namespace ProdutosWebAPI.Models
 
         public ProdutoRepositorio()
         {
-            Add(new Produto { Nome = "Refrigerante", Categoria = "Bebida", Preco = 99.99M });
-            Add(new Produto { Nome = "Café", Categoria = "Bebida", Preco = 11.99M });
-            Add(new Produto { Nome = "Bolacha", Categoria = "Alimento", Preco = 10.99M });
-            Add(new Produto { Nome = "Celular", Categoria = "Objeto", Preco = 2100.99M });
-            Add(new Produto { Nome = "Copo", Categoria = "Objeto", Preco = 19.99M });
+            produtos.Add(new Produto { Id = 1, Nome = "Guaraná Antartica", Categoria = "Refrigerantes", Preco = 4.59M });
+            produtos.Add(new Produto { Id = 2, Nome = "Suco de Laranja Prats", Categoria = "Sucos", Preco = 5.75M });
+            produtos.Add(new Produto { Id = 3, Nome = "Mostarda Hammer", Categoria = "Condimentos", Preco = 3.90M });
+            produtos.Add(new Produto { Id = 4, Nome = "Molho de Tomate Cepera", Categoria = "Condimentos", Preco = 2.99M });
+            produtos.Add(new Produto { Id = 5, Nome = "Suco de Uva Aurora", Categoria = "Sucos", Preco = 6.50M });
         }
 
         public Produto Add(Produto item)

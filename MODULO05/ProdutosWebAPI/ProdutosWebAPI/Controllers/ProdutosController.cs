@@ -32,16 +32,18 @@ namespace ProdutosWebAPI.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Produto> CriaProduto([FromBody] Produto item)
+        public IActionResult CriarProduto([FromBody] Produto item)
         {
-            if(item == null)
+            if (item == null)
+            {
                 return BadRequest();
+            }
 
             item = repositorio.Add(item);
             return CreatedAtRoute("GetProduto", new { id = item.Id }, item);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult AtualizaProduto(int id, [FromBody] Produto item)
         {
             if (item == null)
@@ -54,7 +56,7 @@ namespace ProdutosWebAPI.Controllers
             return new NoContentResult();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DetetaProduto(int id)
         {
             Produto item = repositorio.Get(id);
