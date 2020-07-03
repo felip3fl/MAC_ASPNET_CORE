@@ -15,6 +15,15 @@ namespace AutenticacaoCookies
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication("TesteFelipe")
+                .AddCookie("TesteFelipe", options => 
+                {
+                    options.AccessDeniedPath = new PathString("/Seguranca/AcessoNegado");
+                    options.LoginPath = new PathString("/Seguranca/Login");
+                    options.LogoutPath = new PathString("/Seguranca/Logout");
+                });
+
+            services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,10 +34,8 @@ namespace AutenticacaoCookies
                 app.UseDeveloperExceptionPage();
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            app.UseAuthentication();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
