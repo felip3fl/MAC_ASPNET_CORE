@@ -40,7 +40,12 @@ namespace ContatosWebAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Teste}/{action=Index}/{id?}");
+            });
         }
     }
 }
