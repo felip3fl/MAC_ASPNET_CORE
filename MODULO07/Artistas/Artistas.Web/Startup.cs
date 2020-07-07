@@ -10,6 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Artistas.DAL.Context;
+using Artistas.DAL.Entities.Repositorios;
+using Artistas.DAL.Context.Repositorios;
 
 namespace Artistas.Web
 {
@@ -35,6 +37,7 @@ namespace Artistas.Web
             services.AddDbContext<ArtistaContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
