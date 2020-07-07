@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Artistas.DAL.Entities
+﻿namespace Artistas.DAL.Entities
 {
     public class ArtistaDetalhe
     {
