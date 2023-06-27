@@ -17,7 +17,7 @@
 ## 📃 Descrição do projeto
 
 <p align="justify">
- Projeto em desenvolvimento para estudo a tecnologia ASP.NET. Seguindo todos os ensinamento do curso Desenvolvedor.io e outras fontes de conhecimento.
+ Projeto em desenvolvimento para estudo a tecnologia ASP.NET. Seguindo todos os ensinamento do curso Macoratti e outras fontes de conhecimento.
 </p>
 
 
@@ -34,7 +34,7 @@
 
 ## 📁 Acesso ao projeto
 
-**Todo código fonte se encontra na pasta SRC/DevIO.Api**
+**Todo código fonte se encontra na raiz desse repositorio**
 
 
 <BR>
