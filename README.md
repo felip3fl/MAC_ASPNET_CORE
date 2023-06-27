@@ -42,7 +42,7 @@
 
 ## 🛠️ Abrir e rodar o projeto
 
-Use o ``Visual Studio Code`` para usar este projeto
+Use o ``Visual Studio 2022`` para usar este projeto
 
 Run Entity framework command
 ```
@@ -56,12 +56,12 @@ update-database -Verbose -Context MeuDBContext
 <img width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg">
 &nbsp;&nbsp;<img width="90"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg">
 &nbsp;&nbsp;<img width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
-&nbsp;&nbsp;<img width="90"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg">
+&nbsp;&nbsp;<img width="90"  src="https://raw.githubusercontent.com/felip3fl/felip3fl/1a6a66b6a143aab342cf2df18f56d8c1c7e6c8fb/Material/Icon/visual-studio.svg">
 &nbsp;&nbsp;<img width="90" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg">
 &nbsp;&nbsp;<img width="90"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg">
 </p>
 
-- ``ASP.NET 6``
+- ``ASP.NET 2.x``
 - ``Paradigma de orientação a objetos``
 
 <BR>
